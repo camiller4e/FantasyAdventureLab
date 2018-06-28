@@ -6,7 +6,9 @@ import Hings.Spell;
 
 import java.util.ArrayList;
 
-public class Mage extends Sprite {
+public class
+
+Mage extends Sprite {
     private ArrayList<Spell> spells;
     private int MP;
     private Familiar familiar;
@@ -24,6 +26,10 @@ public class Mage extends Sprite {
 
     public int getMP() {
         return MP;
+    }
+
+    public Familiar getFamiliar() {
+        return familiar;
     }
 }
 

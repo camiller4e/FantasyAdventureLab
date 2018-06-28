@@ -13,7 +13,7 @@ public class TestBarbarian {
     @Before
     public void setUp() throws Exception {
         sword = new Sword(10);
-        barbarian = new Barbarian(sword, 100, "Barbara");
+        barbarian = new Barbarian(sword, 100, "Barbara", 2);
     }
 
     @Test
@@ -29,5 +29,10 @@ public class TestBarbarian {
     @Test
     public void hasName() {
         assertEquals("Barbara", barbarian.getName());
+    }
+
+    @Test
+    public void hasRageLevel() {
+        assertEquals(2, barbarian.getRageLevel());
     }
 }
