@@ -1,3 +1,5 @@
+import GoodGuys.Fighters.Barbarian;
+import Hings.Sword;
 import org.junit.Before;
 import org.junit.Test;
 

@@ -6,6 +6,6 @@
 //
 //    @Before
 //    public void setUp() throws Exception {
-//        room = new Room("Gold");
+//        room = new Room("Hings.Gold");
 //    }
 //}

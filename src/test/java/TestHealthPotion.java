@@ -1,3 +1,4 @@
+import Hings.HealthPotion;
 import org.junit.Before;
 import org.junit.Test;
 
