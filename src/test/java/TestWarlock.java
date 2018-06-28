@@ -9,6 +9,7 @@ public class TestWarlock {
 
     Warlock warlock;
     Familiar familiar;
+    
 
     @Before
     public void setUp() throws Exception {

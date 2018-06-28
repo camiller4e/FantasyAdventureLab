@@ -16,4 +16,8 @@ public class Warlock extends Mage implements ISpellAttack {
         sprite.setHP(sprite.getHP() - spell.getATK());
     }
 
+
+
+
+
 }

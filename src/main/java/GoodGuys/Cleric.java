@@ -1,5 +1,6 @@
 package GoodGuys;
 
+import BadGuys.Enemy;
 import Behaviours.IAttack;
 import Hings.Potion;
 import Hings.Weapon;
@@ -8,18 +9,30 @@ import java.util.ArrayList;
 
 public class Cleric extends Sprite implements IAttack {
 
-    private ArrayList<Potion> potions;
+    private Potion potion;
+    private Weapon weapon;
 
-    public Cleric(int HP, String name) {
+    public Cleric(int HP, String name, Potion potion, Weapon weapon) {
         super(HP, name);
-        this.potions = potions;
+        this.potion = potion;
+        this.weapon = weapon;
     }
 
-    public ArrayList<Potion> getPotions() {
-        return potions;
+    public Potion getPotion() {
+        return potion;
     }
 
-    public void attack(Sprite sprite, Weapon weapon) {
-        sprite.setHP(sprite.getHP() - weapon.getATK());
+    public Weapon getWeapon() {
+        return weapon;
+    }
+
+    public void attack(Enemy enemy) {
+        enemy.setHP(enemy.getHP() - weapon.getATK());
+    }
+
+    public void setPotion(Potion potion) {
+        this.potion = potion;
     }
 }
+
+

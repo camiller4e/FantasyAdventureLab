@@ -1,3 +1,4 @@
+import BadGuys.Orc;
 import GoodGuys.Fighters.Dwarf;
 import Hings.Axe;
 import org.junit.Before;
@@ -34,5 +35,12 @@ public class TestDwarf {
     @Test
     public void hasBeardLength() {
         assertEquals(5, dwarf.getBeardLength());
+    }
+
+    @Test
+    public void canAttack() {
+        Orc orc = new Orc(10, 5);
+        dwarf.attack(orc);
+        assertEquals(0, orc.getHP());
     }
 }

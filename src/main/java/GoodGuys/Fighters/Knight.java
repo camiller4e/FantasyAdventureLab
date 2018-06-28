@@ -1,5 +1,6 @@
 package GoodGuys.Fighters;
 
+import BadGuys.Enemy;
 import Behaviours.IAttack;
 import GoodGuys.Sprite;
 import Hings.Weapon;
@@ -17,7 +18,10 @@ public class Knight extends Fighter implements IAttack {
         return armor;
     }
 
-    public void attack(Sprite sprite, Weapon weapon) {
-        sprite.setHP(sprite.getHP() - weapon.getATK());
+    public void attack(Enemy enemy) {
+        enemy.setHP(enemy.getHP() - weapon.getATK());
+    }
+    public void setArmor(int armor) {
+        this.armor = armor;
     }
 }

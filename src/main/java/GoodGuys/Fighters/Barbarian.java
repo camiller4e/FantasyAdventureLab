@@ -18,8 +18,8 @@ public class Barbarian extends Fighter implements IAttack {
         return rageLevel;
     }
 
-    public void attack(Sprite sprite, Weapon weapon) {
-        sprite.setHP(sprite.getHP() - weapon.getATK());
+    public void attack(Enemy enemy) {
+        enemy.setHP(enemy.getHP() - weapon.getATK());
     }
 
 }

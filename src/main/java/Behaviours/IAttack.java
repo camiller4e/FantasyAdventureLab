@@ -1,9 +1,10 @@
 package Behaviours;
 
+import BadGuys.Enemy;
 import GoodGuys.Sprite;
 import Hings.Weapon;
 
 public interface IAttack {
 
-    public void attack(Sprite sprite, Weapon weapon);
+    public void attack(Enemy enemy);
 }

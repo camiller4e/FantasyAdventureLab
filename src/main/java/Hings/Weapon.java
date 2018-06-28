@@ -11,4 +11,6 @@ public abstract class Weapon {
     public int getATK() {
         return ATK;
     }
+
+
 }

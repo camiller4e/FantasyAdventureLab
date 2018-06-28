@@ -16,4 +16,8 @@ public class Enemy {
     public int getATK() {
         return ATK;
     }
+
+    public void setHP(int HP) {
+        this.HP = HP;
+    }
 }

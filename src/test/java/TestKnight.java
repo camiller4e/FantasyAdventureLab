@@ -1,3 +1,4 @@
+import BadGuys.Orc;
 import GoodGuys.Fighters.Dwarf;
 import GoodGuys.Fighters.Knight;
 import Hings.Axe;
@@ -36,5 +37,12 @@ public class TestKnight {
     @Test
     public void hasArmor() {
         assertEquals(3, knight.getArmor());
+    }
+
+    @Test
+    public void canAttack() {
+        Orc orc = new Orc(10, 5);
+        knight.attack(orc);
+        assertEquals(0, orc.getHP());
     }
 }
