@@ -1,8 +1,10 @@
 package GoodGuys.Fighters;
 
+import Behaviours.IAttack;
+import GoodGuys.Sprite;
 import Hings.Weapon;
 
-public class Dwarf extends Fighter {
+public class Dwarf extends Fighter implements IAttack {
 
     private int beardLength;
 
@@ -13,5 +15,9 @@ public class Dwarf extends Fighter {
 
     public int getBeardLength() {
         return beardLength;
+    }
+
+    public void attack(Sprite sprite, Weapon weapon) {
+        sprite.setHP(sprite.getHP() - weapon.getATK());
     }
 }

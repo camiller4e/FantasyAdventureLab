@@ -26,4 +26,8 @@ public class Sprite {
     public ArrayList<Treasure> getBag() {
         return bag;
     }
+
+    public void setHP(int HP) {
+        this.HP = HP;
+    }
 }

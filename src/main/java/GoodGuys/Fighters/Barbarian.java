@@ -1,8 +1,11 @@
 package GoodGuys.Fighters;
 
+import BadGuys.Enemy;
+import Behaviours.IAttack;
+import GoodGuys.Sprite;
 import Hings.Weapon;
 
-public class Barbarian extends Fighter {
+public class Barbarian extends Fighter implements IAttack {
 
     private int rageLevel;
 
@@ -14,4 +17,9 @@ public class Barbarian extends Fighter {
     public int getRageLevel() {
         return rageLevel;
     }
+
+    public void attack(Sprite sprite, Weapon weapon) {
+        sprite.setHP(sprite.getHP() - weapon.getATK());
+    }
+
 }
