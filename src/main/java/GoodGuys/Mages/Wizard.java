@@ -9,8 +9,8 @@ import Hings.Weapon;
 
 public class Wizard extends Mage implements ISpellAttack {
 
-    public Wizard(int HP, String name, int MP, Familiar familiar) {
-        super(HP, name, MP, familiar);
+    public Wizard(int HP, String name, Spell spell, int MP, Familiar familiar) {
+        super(HP, name, spell, MP, familiar);
     }
 
     public void magicAttack(Sprite sprite, Spell spell) {

@@ -2,6 +2,7 @@ package GoodGuys;
 
 import BadGuys.Enemy;
 import Behaviours.IAttack;
+import Hings.HealthPotion;
 import Hings.Potion;
 import Hings.Weapon;
 
@@ -33,6 +34,10 @@ public class Cleric extends Sprite implements IAttack {
     public void setPotion(Potion potion) {
         this.potion = potion;
     }
+
+//    public void use(Potion potion, Sprite sprite){
+//        if (this.potion = )
+//    }
 }
 
 

@@ -1,5 +1,6 @@
 import GoodGuys.Familiar;
 import GoodGuys.Mages.Warlock;
+import Hings.Spell;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,12 +10,13 @@ public class TestWarlock {
 
     Warlock warlock;
     Familiar familiar;
+    Spell fireball;
     
 
     @Before
     public void setUp() throws Exception {
         familiar = new Familiar(50, "Jeff the Dragon");
-        warlock = new Warlock(80, "Joben", 20, familiar);
+        warlock = new Warlock(80, "Joben", fireball, 20, familiar);
     }
 
     @Test

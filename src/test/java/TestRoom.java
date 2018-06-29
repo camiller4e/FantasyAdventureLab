@@ -6,6 +6,7 @@ import GoodGuys.Fighters.Barbarian;
 import GoodGuys.Mages.Wizard;
 import GoodGuys.Sprite;
 import Hings.Gold;
+import Hings.Spell;
 import Hings.Sword;
 import Hings.Treasure;
 import org.junit.Before;
@@ -23,6 +24,8 @@ public class TestRoom {
     ArrayList<Enemy> enemies;
     ArrayList<GoodGuys.Sprite> players;
     Sword sword;
+    Spell fireball;
+    Familiar familiar;
 
 
     @Before
@@ -35,7 +38,7 @@ public class TestRoom {
         Enemy troll = new Troll(5, 5);
         Barbarian barbarian = new Barbarian(sword, 100, "Barbara", 2);
         Familiar familiar = new Familiar(50, "Betty the Ogre");
-        Wizard wizard = new Wizard(80, "Flarp", 20, familiar);
+        Wizard wizard = new Wizard(80, "Flarp", fireball, 20, familiar);
         players.add(barbarian);
         players.add(wizard);
         enemies.add(orc);
